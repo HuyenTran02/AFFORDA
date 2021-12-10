@@ -200,30 +200,17 @@ header {
     } 
   
     figure.item {
-      font-family: "Roboto", sans-serif;
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-      margin: 30px;
-      min-width: 220px;
-      max-width: 410px;
-      max-height: 295px;
-      width: 100%;
-    
-    }
-
-    figure.item * {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    figure.item img {
-      
-      opacity: 1;
-      width: 100%;
-      -webkit-transition: opacity 0.35s;
-      transition: opacity 0.35s;
-    }
-    figure.item figcaption {
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    min-width: 220px;
+    max-width: 410px;
+    max-height: 295px;
+    width: 100%;
+  
+  } 
+   
+     figure.item figcaption {
       position: absolute;
       top: 0;
       left: 0;
@@ -239,7 +226,7 @@ header {
       position: relative;
      
     }
-    figure.item figcaption::before {
+     figure.item figcaption::before {
       position: absolute;
       top: 50%;
       bottom: 50%;
@@ -252,8 +239,8 @@ header {
       transition: all 0.4s;
       -webkit-transition-delay: 0.6s;
       transition-delay: 0.6s;
-    }
-    figure.item h2,
+    } 
+     figure.item h2,
     figure.item p {
      
       margin: 0;
@@ -264,10 +251,12 @@ header {
       width: 100%;
       left: 0;
       -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
-      transition: opacity 0.45s,-webkit-transform 0.45s,-moz-transform 0.45s,-o-transform 0.45s,transform 0.45s;
-    }
+      transition: opacity 0.45s,-webkit-transform 0.45s,-moz-transform 0.45s,-o-transform 0.45s,transform 0.45s; 
+    }   
+
     figure.item h2 {
       font-size: 40px;
+      color: #fff;
       text-align:center;
       display: inline-block;
       font-weight: 800;
@@ -290,15 +279,12 @@ header {
       top: 0%;
       color: #000;
       background:lightcyan;
-      -webkit-transform: translate3d(-50%, 0%, 0);
+      -webkit-transform: translate3d(50%, 0%, 0);
       transform: translate3d(-50%, 0%, 0);
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
+      -webkit-transition-delay: 0s; 
+       transition-delay: 0s;  
     }
-
-    figure.item:hover img {
-      opacity: 0.7;
-    }
+   
     figure.item:hover figcaption h2,
     figure.item:hover figcaption p {
       -webkit-transform: translate3d(0%, 0%, 0);
@@ -309,18 +295,17 @@ header {
     figure.item:hover figcaption h2 {
       opacity: 1;
     }
-    figure.item:hover figcaption p {
+     figure.item:hover figcaption p {
       opacity: 1;
-    }
+    } 
     figure.item:hover figcaption::before {
-      background: #ffffff;
+      background:#fff;
       top: 0px;
       bottom: 0px;
       opacity: 1;
-      -webkit-transition-delay: 0s;
+      
       transition-delay: 0s;
     }
-
     /*----chúng tôi------*/
     .about_us {
       display: flex;
@@ -332,7 +317,7 @@ header {
       display: flex;
       height: 280px;
      
-      overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/
+      overflow: hidden; 
       position: relative;
       
       
