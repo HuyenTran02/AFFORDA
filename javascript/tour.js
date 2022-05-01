@@ -4,34 +4,34 @@ $(document).ready(function() {
     createTravelTemplate(travelTours);
     
 
-    $(".click").click(function() {
+    $('.click').click(function() {
         alert('Vui lòng đăng nhập để thực hiện thao tác!')
     })
 
     var li1, li2, li3;
 
-    $("#category > ul > li > span").click(function() {
+    $('#category > ul > li > span').click(function() {
         var category = $(this).text()
         li1 = category
 
-        $("#category > span").text(category)
+        $('#category > span').text(category)
     })
 
-    $("#area > ul > li > span").click(function() {
+    $('#area > ul > li > span').click(function() {
         var area = $(this).text()
         li2 = area
 
-        $("#area > span").text(area)
+        $('#area > span').text(area)
     })
 
-    $("#price > ul > li > span").click(function() {
+    $('#price > ul > li > span').click(function() {
         var price = $(this).text()
         li3 = price
 
-        $("#price > span").text(price)
+        $('#price > span').text(price)
     })
 
-    $("#look").click(function() {
+    $('#look').click(function() {
 
         li2=li2 && li2.toUpperCase();
 
@@ -51,8 +51,8 @@ $(document).ready(function() {
                         newGoodTours.sort((a, b) => b.price - a.price)
                     
                     createTourTemplate(newGoodTours);
-                    $("section.tour_uu_dai").css("display", "none")
-                    $("section.best-tour").css("display", "block")
+                    $('section.tour_uu_dai').css('display', 'none')
+                    $('section.best-tour').css('display', 'block')
                 }
             }
         }
@@ -70,8 +70,8 @@ $(document).ready(function() {
                         newTravelTours.sort((a, b) => b.price - a.price)
                 
                     createTravelTemplate(newTravelTours)
-                    $("section.best-tour").css("display", "none")
-                    $("section.tour_uu_dai").css("display", "block")
+                    $('section.best-tour').css('display', 'none')
+                    $('section.tour_uu_dai').css('display', 'block')
                    
                 }
             }
@@ -82,20 +82,20 @@ $(document).ready(function() {
 })
 
 const createTourTemplate = (goodTours) => {
-    const tourContainer = $("section.best-tour > div > div.col");
+    const tourContainer = $('section.best-tour > div > div.col');
     var output = ''
     goodTours.forEach(goodTour => output += 
     `
     <div>
-        <div class="best-tour__img-item">
-            <img src=${goodTour.img} alt="" class="effect-img best-tour__img-square ">
-            <div class="img-text">
-                <h1 class="place">${goodTour.place}</h1>
-                <h1 class="price">${goodTour.price_text}</h1>
-                <button class="best-tour_btn click">ĐẶT NGAY</button>
-                <div class="icon">
+        <div class='best-tour__img-item'>
+            <img src=${goodTour.img} alt='' class='effect-img best-tour__img-square '>
+            <div class='img-text'>
+                <h1 class='place'>${goodTour.place}</h1>
+                <h1 class='price'>${goodTour.price_text}</h1>
+                <button class='best-tour_btn click'>ĐẶT NGAY</button>
+                <div class='icon'>
                     <p>
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class='fas fa-map-marker-alt'></i>
                         ${goodTour.location}
                     </p>
                 </div>
@@ -107,31 +107,30 @@ const createTourTemplate = (goodTours) => {
 }
 
 const createTravelTemplate = (travelTours) => {
-    const travelContainer = $(".travel");
+    const travelContainer = $('.travel');
     var output = ''
     travelTours.forEach(travelTour => output += 
     `
-    <div class="travel-item">
-        <div class="icon_b">
+    <div class='travel-item'>
+        <div class='icon_b'>
             <p>
-                <i class="fas fa-map-marker-alt"></i>
+                <i class='fas fa-map-marker-alt'></i>
                 ${travelTour.location}
             </p>
         </div>
-        <img src=${travelTour.img} alt="travel1" class="travel-item-img">
-        <h3 class="travel-item-heading">${travelTour.place}</h3>
-        <div class=" rating_5 ">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        <img src=${travelTour.img} alt='travel1' class='travel-item-img'>
+        <h3 class='travel-item-heading'>${travelTour.place}</h3>
+        <div class=' rating_5 '>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
         </div>
-
-        <div class="travel-item-price">
-        <span class="travel-item-price">${travelTour.price_text} </span>
+        <div class='travel-item-price'>
+        <span class='travel-item-price'>${travelTour.price_text} </span>
         </div>
-        <a href="javascript:void(0);" class="travel-item-button click">
+        <a href='javascript:void(0);' class='travel-item-button click'>
             MUA TOUR
         </a>
     </div>

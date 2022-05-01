@@ -630,7 +630,7 @@ div > img {
 }
 
 .offers_name {
-  position: absolute;
+  /* position: absolute; */
   left: 10;
   bottom: 60px;
   width: 150px;
@@ -638,7 +638,7 @@ div > img {
   font-weight: 800;
   background:  #31a7da;
   overflow: hidden;
-  position: relative;
+   position: relative;
 }
 .offer_text {
   text-shadow: 2px 2px 5px blue;

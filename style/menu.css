@@ -75,7 +75,7 @@ div.main-menu {
     border-radius: 100px;
      visibility: hidden; 
   }
-  
+/*   
   .menu-user::before {
     content: " ";
     border-width: 12px;
@@ -84,7 +84,7 @@ div.main-menu {
     position: absolute;
     top: -24px;
     
-  }
+  } */
   
   .menu-user > div > a {
     font-size: 14px;
